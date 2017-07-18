@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyButtonProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zmU-kM-Ui5" customClass="MyButton" customModule="MyButtonProject" customModuleProvider="target">
+                                <rect key="frame" x="66" y="50" width="243" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disable the button" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyS-Sq-elC">
+                                <rect key="frame" x="117" y="323" width="140.5" height="21"/>
+                                <gestureRecognizers/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="n65-Iz-9OR" appends="YES" id="B9j-Q6-tMW"/>
+                                </connections>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="zmU-kM-Ui5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="4bY-1B-rOy"/>
+                            <constraint firstItem="tyS-Sq-elC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5vn-3w-abR"/>
+                            <constraint firstItem="tyS-Sq-elC" firstAttribute="top" secondItem="zmU-kM-Ui5" secondAttribute="bottom" constant="145" id="IeF-QV-Opu"/>
+                            <constraint firstItem="tyS-Sq-elC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UAK-8y-yNW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zmU-kM-Ui5" secondAttribute="trailing" constant="50" id="W4v-0a-mLL"/>
+                            <constraint firstItem="zmU-kM-Ui5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="xeo-5O-Ewj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="isDisableLabel" destination="tyS-Sq-elC" id="nCp-2f-DNF"/>
+                        <outlet property="myButton" destination="zmU-kM-Ui5" id="XTc-ju-MxP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="n65-Iz-9OR">
+                    <connections>
+                        <action selector="isDisabledChange:" destination="BYZ-38-t0r" id="Eon-Ht-9ze"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+</document>
