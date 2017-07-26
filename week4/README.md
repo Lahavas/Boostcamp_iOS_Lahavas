@@ -11,7 +11,7 @@
 
 * - [x] 프로젝트 기간 중 진행할 애플리케이션의 스토리보드 그려보기
 
-* - [ ] 프로젝트 과제 [(완료영상)](Video/OneToTwntyFive.mov)
+* - [x] 프로젝트 과제 [(완료영상)](Video/OneToTwntyFive.mov)
 	* 1 to 25 게임 만들어보기
 		* [상세 설명 문서](project_description/OneToTwentyFive.md) 참고
 
